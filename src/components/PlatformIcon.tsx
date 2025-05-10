@@ -1,7 +1,8 @@
 import {Platform} from "@/hooks/useGames.ts";
 import {HStack, Icon} from "@chakra-ui/react";
-import {FaWindows, FaPlaystation, FaLinux, FaApple, FaAndroid, FaXbox} from 'react-icons/fa'
+import {FaWindows, FaPlaystation, FaLinux, FaAndroid, FaXbox} from 'react-icons/fa'
 import {MdPhoneIphone} from "react-icons/md";
+import { SiApple } from "react-icons/si";
 import { BsNintendoSwitch } from "react-icons/bs";
 import {BsGlobe} from "react-icons/bs";
 import {IconType} from "react-icons";
@@ -17,7 +18,7 @@ function PlatformIcon({ platforms }: PlatformIconProps) {
         xbox: FaXbox,
         linux: FaLinux,
         windows: FaWindows,
-        apple: FaApple,
+        mac: SiApple,
         android: FaAndroid,
         nintendo: BsNintendoSwitch,
         web: BsGlobe,
