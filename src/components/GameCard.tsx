@@ -13,7 +13,7 @@ interface Props {
 
 function GameCard({game}: Props) {
     return <>
-        <Card>
+        <Card boxShadow="lg" borderRadius={10} p={4}>
             <Image src={getCroppedImageUrl(game.background_image)}></Image>
             <CardBody>
                 <HStack marginBottom={3}
