@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+# 🎮 Game Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Game Hub** è un'applicazione web sviluppata in React per la consultazione di videogiochi, completa di sistema di rating, filtri, layout responsive e interazione dinamica.  
+Il progetto è stato realizzato seguendo il corso _“Mastering React”_ di [Code with Mosh](https://codewithmosh.com).
 
-Currently, two official plugins are available:
+## 🚀 Tecnologie utilizzate
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** con TypeScript
+- **Chakra UI** per il design responsivo
+- **Axios** per le richieste HTTP
+- **RAWG Video Games Database API** per i dati sui giochi
 
-## Expanding the ESLint configuration
+## 📸 Funzionalità principali
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ Ricerca di videogiochi tramite barra di ricerca
+- ✅ Filtro per genere, piattaforma e ordine alfabetico/popolarità
+- ✅ Visualizzazione responsive (desktop e mobile)
+- ✅ Emoji rating system per ogni gioco
+- ✅ Gestione centralizzata dello stato delle query
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Setup del progetto
+
+1. Clona il repository:
+
+   ```bash
+   git clone git@github.com:matteoschettini/my-game-hub.git
+   cd my-game-hub
+   ```
+
+2. Installa le dipendenze:
+
+   ```bash
+   npm install
+   ```
+
+3. Avvia il progetto:
+
+   ```bash
+   npm run dev
+   ```
+
+⚠️ **Nota**: Assicurati di avere una chiave API gratuita dal sito [RAWG.io](https://rawg.io/apidocs) e inserirla nel file `.env`.
+
+```env
+VITE_RAWG_API_KEY=la_tua_chiave_api
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📚 Crediti
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Questo progetto è basato sul corso di [Code with Mosh](https://codewithmosh.com), un'ottima risorsa per imparare.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🧠 Autore
+
+Matteo Schettini  
+GitHub: [@matteoschettini](https://github.com/matteoschettini)
